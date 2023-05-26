@@ -65,3 +65,7 @@
 | channel_id | int |  | INDEX |  |  |
 | view_count | int |  |  | 0 |  |
 | viewed_at | DATETIME | YES |  | NULL |  |
+
+ER図
+https://docs.google.com/presentation/d/1gIljMatLqp6MtdErnHtPLWYRvENuhtzdkPQIq6Mu4mE/edit#slide=id.p
+| view_count | int |  |  | 0 |  |
