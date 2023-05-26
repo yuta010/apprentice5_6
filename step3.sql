@@ -59,6 +59,7 @@ WHERE
     CONVERT_TZ(cp.start_time, '+0:00', '+9:00') BETWEEN CONVERT_TZ(NOW(), '+0:00', '+9:00') AND DATE_ADD(CONVERT_TZ(NOW(), '+0:00', '+9:00'), INTERVAL 1 DAY)
 ORDER BY
     cp.start_time;
+    
 4. ドラマというチャンネルがあったとして、ドラマのチャンネルの番組表を表示するために、本日から一週間分、何日の何時から何の番組が放送されるのかを知りたいです。
 ドラマのチャンネルに対して、放送開始時刻、放送終了時刻、シーズン数、エピソード数、エピソードタイトル、エピソード詳細を本日から一週間分取得してください。
 
@@ -81,6 +82,7 @@ WHERE
     CONVERT_TZ(cp.start_time, '+0:00', '+9:00') BETWEEN CONVERT_TZ(NOW(), '+0:00', '+9:00') AND DATE_ADD(CONVERT_TZ(NOW(), '+0:00', '+9:00'), INTERVAL 1 WEEK)
 ORDER BY
     cp.start_time;
+    
 5. 直近一週間で最も見られた番組が知りたいです。
 直近一週間に放送された番組の中で、エピソード視聴数合計トップ2の番組に対して、番組タイトル、視聴数を取得してください。
 
